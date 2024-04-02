@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif ;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #8a5a44;
+}
+h2{
+    -webkit-text-stroke: 1px red;
+}
+.msg-container{
+    text-align: center;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+     justify-content: center; 
+    flex-direction: column; 
+     gap: 5vh; 
+}
+.hide{
+    display: none;
+}
+.msg-container #msg{
+    color: #e2afff;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: gilroy;
+  
+}
+main{
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+
+#container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 22vmin;
+    width: 22vmin;
+    border-radius: 10px;
+    border: none;
+    font-size: 10vmin;
+    color: #860f0b;
+    box-shadow: 0 0 10px  rgb(0, 0, 0) ;
+    animation: identifier 2s infinite alternate;
+    background-color: #ffffc7;
+}
+@keyframes identifier {
+    100%{
+        box-shadow: 0 0 60px rgba(255, 255, 255, 0.982);
+
+    }
+}
+.reset-btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+
+}
+.new-btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+
+}
+
+.arrow{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #222222;
+    text-decoration: none;
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(44, 112, 85);
+    border-left: 1px solid rgb(160, 120, 120);
+    padding-left:40px ;
+    transition: 0.5s;
+
+
+}
+.arrow:hover{
+    padding-left: 0px;
+    padding-right: 40px;
+    color: white;
+}
+
+.arrow span{
+    position: absolute;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #860f0b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.arrow:hover span{
+    left: calc(100% - 55px);
+}
