@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "JAVASCRIPT GAME/index.html",
+        "src": "Downloads/Game/JAVASCRIPT GAME",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "JAVASCRIPT GAME/index.html"
+        "dest": "Downloads/Game/JAVASCRIPT GAME"
       }
     ]
   }
